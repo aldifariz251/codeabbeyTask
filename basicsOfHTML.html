@@ -1,19 +1,21 @@
-<html>
-    <head>
-        <title>Basics of HTML demo</title>
-    </head>
-    <script>
-        const params = new URLSearchParams(document.location.search);
-        var s = params.get("s");
-        var keyHere = document.getElementById("keyHere")
-        console.info(s);
-        console.info(keyHere);
-        keyHere.innerHTML = s;​
-    </script>
-    <body>
-        <p>Secret value is <b id="keyHere"></b>.</p>
-        <p>Read more at
-            <a href="http://www.codeabbey.com/index/task_view/basics-of-html">this task</a>.
-        </p>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basics of HTML demo</title>
+</head>
+<body>
+    <p>Secret value is <b id="keyHere"></b>.</p>
+    <p>Read more at
+        <a href="http://www.codeabbey.com/index/task_view/basics-of-html">this task</a>.
+    </p>
+</body>
+<script>
+    const params = new URLSearchParams(document.location.search);
+    var s = params.get("s");
+    var keyHere = document.getElementById("keyHere");
+    
+    keyHere.innerHTML = s;
+</script>
 </html>
