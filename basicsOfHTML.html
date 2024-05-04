@@ -18,10 +18,9 @@
         // document.getElementById("keyHere").innerHTML = keyValue;​
 
         const params = new URLSearchParams(document.location.search);
-        const s = params.get("s");
-        const o = params.get("o");
-        console.info(s); //show C
-        console.log(o); //show 1
+        const keyValue = params.get("key");
+        console.info(keyValue); 
+        document.getElementById("keyHere").innerHTML = keyValue;​
     </script>
     <body>
         <p>Secret value is <b id='keyHere'>######</b>.</p>
