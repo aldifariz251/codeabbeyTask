@@ -18,12 +18,12 @@
         // document.getElementById("keyHere").innerHTML = keyValue;​
 
         const params = new URLSearchParams(document.location.search);
-        const keyValue = params.get("key");
+        const keyValue = params.get("keyValue");
         console.info(keyValue); 
         document.getElementById("keyHere").innerHTML = keyValue;​
     </script>
     <body>
-        <p>Secret value is <b id='keyHere'>######</b>.</p>
+        <p>Secret value is <b id="keyHere"></b>.</p>
         <p>Read more at
             <a href="http://www.codeabbey.com/index/task_view/basics-of-html">this task</a>.
         </p>
