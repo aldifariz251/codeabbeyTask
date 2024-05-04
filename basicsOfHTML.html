@@ -4,9 +4,11 @@
     </head>
     <script>
         const params = new URLSearchParams(document.location.search);
-        const s = params.get("s");
-        console.info(s); 
-        document.getElementById("keyHere").innerHTML = s;​
+        var s = params.get("s");
+        var keyHere = document.getElementById("keyHere")
+        console.info(s);
+        console.info(keyHere);
+        keyHere.innerHTML = s;​
     </script>
     <body>
         <p>Secret value is <b id="keyHere"></b>.</p>
